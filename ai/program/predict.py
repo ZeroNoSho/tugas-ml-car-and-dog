@@ -2,8 +2,13 @@ from flask import Flask, request, jsonify, send_file
 from ultralytics import YOLO
 import os
 import shutil
+from flask_cors import CORS
 
 app = Flask(__name__)
+
+CORS(app) 
+CORS(app, resources={r"/predict": {"origins": "*"}})
+
 model = YOLO('../result/best.pt')
 
 @app.route('/predict', methods=['POST'])
@@ -33,7 +38,7 @@ def predict():
                 'bbox': xyxy
             })
         
-        return send_file(f'../runs/detect/predict/{image_path}', mimetype='image/jpeg')
+        return send_file(f'runs/detect/predict/temp_{os.path.splitext(image.filename)[0]}.jpg', mimetype='image/jpeg')
     
     finally:
         os.remove(image_path)

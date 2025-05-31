@@ -1,0 +1,25 @@
+# 🚀 Project Setup: Flask + Nuxt.js
+
+## 📦 Backend (Flask)
+
+# Install dependencies
+
+pip install requirements.txt
+
+# Jalankan server
+
+python app.py
+
+## 📦 Fonrtend (NextJS)
+
+# Masuk ke folder frontend
+
+cd interface
+
+# Install dependencies
+
+npm install
+
+# Jalankan dev server
+
+npm run dev
