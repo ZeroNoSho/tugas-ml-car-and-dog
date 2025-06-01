@@ -8,7 +8,7 @@ pip install requirements.txt
 
 # Jalankan server
 
-python app.py
+python predict.py
 
 ## 📦 Fonrtend (NextJS)
 
