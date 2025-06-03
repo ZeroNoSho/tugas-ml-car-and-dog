@@ -1,4 +1,25 @@
-# 🚀 Project Setup: Flask + Next.js
+# 🚀 Project Setup: Python + Flask + Next.js
+
+## 📦 Model (Python)
+
+# Install dependencies
+
+pip install requirements.txt
+
+# Masukan dataset mentah 
+
+# Buat Dataset utama
+
+python prepare_dataset.py
+
+# lakukan training data untuk membuat model
+
+python train.py
+
+# lakukan pengujian model
+
+python detect.py
+
 
 ## 📦 Backend (Flask)
 
@@ -9,6 +30,7 @@ pip install requirements.txt
 # Jalankan server
 
 python predict.py
+
 
 ## 📦 Fonrtend (NextJS)
 
