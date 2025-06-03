@@ -1,0 +1,5 @@
+train: D:\Matkul\Semester 8\Visi Komputer\yolo_kucing_anjing\dataset\images\train
+val: D:\Matkul\Semester 8\Visi Komputer\yolo_kucing_anjing\dataset\images\val
+
+nc: 2
+names: ['kucing', 'anjing']

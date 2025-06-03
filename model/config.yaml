@@ -1,0 +1,6 @@
+path: D:\Matkul\Semester 8\Visi Komputer\yolo_kucing_anjing\dataset
+train: images/train
+val: images/val
+names:
+  0: cat
+  1: dog
